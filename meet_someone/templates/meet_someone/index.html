@@ -1,3 +1,18 @@
 {% extends "base.html" %}
+{% load static %}
 {% block content %}
+<section class="meet-someone">
+    <div class="header">
+        Join By Interest
+    </div>
+    <ul>
+        <li><img src="{% static 'img/bag.png' %}">School</li>
+        <li><img src="{% static 'img/soccer_ball.png' %}" height="40px">Sports</li>
+        <li><img src="{% static 'img/controller.png' %}" height="40px">Games</li>
+    </ul>
+    <div class="header">
+        Feeling Lucky
+    </div>
+    <div class="lucky"><img src="{% static 'img/clover.png' %}"></div>
+</section>
 {% endblock %}

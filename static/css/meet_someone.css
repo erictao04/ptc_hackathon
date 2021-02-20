@@ -1,0 +1,67 @@
+html {
+  font-size: 10px;
+}
+
+section.meet-someone .header {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+section.meet-someone .header:first-child {
+  padding: 10vh 0 5vh 0;
+}
+
+section.meet-someone ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 13vh;
+  gap: 5vh 8vw;
+  padding: 0 15vw 7vh 15vw;
+}
+
+section.meet-someone ul li {
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+}
+
+section.meet-someone ul li img {
+  height: 12vh;
+  margin-right: 2vw;
+}
+
+section.meet-someone ul li:hover {
+  cursor: pointer;
+}
+
+section.meet-someone ul li:first-child {
+  background-color: rgb(175, 209, 213);
+}
+
+section.meet-someone ul li:nth-child(2) {
+  background-color: rgb(118, 133, 171);
+}
+
+section.meet-someone ul li:nth-child(3) {
+  background-color: rgb(50, 70, 111);
+}
+
+section.meet-someone .lucky {
+  background-color: rgb(224, 152, 120);
+  width: 20vw;
+  position: fixed;
+  left: 40vw;
+  height: 15vh;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5vh;
+}
+
+section.meet-someone .lucky:hover {
+  cursor: pointer;
+}
