@@ -8,16 +8,22 @@ body {
 
 nav ul {
   display: grid;
-  grid-template-columns: repeat(4, 1fr) 0.3fr;
+  grid-template-columns: 0.3fr repeat(4, 1fr) 0.3fr;
   font-size: 2.5rem;
   text-align: center;
   align-items: center;
   padding-left: 0;
+  list-style: none;
+  margin: 0 0 0 2vw;
 }
 
 nav ul a {
   text-decoration: none;
   color: black;
+}
+
+nav ul a img {
+  height: 15vh;
 }
 
 nav ul a.setting {

@@ -11,11 +11,12 @@
     <body>
         <nav>
             <ul>
-                <a href="{% url 'friends:index' %}">Friends</a>
-                <a href="{% url 'my_groups:index' %}">My Groups</a>
-                <a href="{% url 'my_profile:index' %}">My Profile</a>
-                <a href="{% url 'help:index' %}">Help</a>
-                <a href=""><i class="fas fa-cog"></i></a>
+                <li><a href="{% url 'index' %}"><img src="{% static 'img/logo.jpg' %}" height="70px"></a></li>
+                <li><a href="{% url 'friends:index' %}">Friends</a></li>
+                <li><a href="{% url 'my_groups:index' %}">My Groups</a></li>
+                <li><a href="{% url 'my_profile:index' %}">My Profile</a></li>
+                <li><a href="{% url 'help:index' %}">Help</a></li>
+                <li><a href=""><i class="fas fa-cog"></i></a></li>
         </nav>
         {% block content %}{% endblock %}
     </body>
