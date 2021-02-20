@@ -6,12 +6,14 @@
         {% load static %}
         <link rel="stylesheet" href="{% static 'css/nav_bar.css' %}">
         <link rel="stylesheet" href="{% static 'css/landing_page.css' %}">
+        <link rel="stylesheet" href="{% static 'css/friends.css' %}">
         <script src="https://kit.fontawesome.com/6f3d5e0865.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <nav>
             <ul>
                 <li><a href="{% url 'index' %}"><img src="{% static 'img/logo.jpg' %}" height="70px"></a></li>
+                <li><a href="{% url 'meet_someone:index' %}">Meet Someone</a></li>
                 <li><a href="{% url 'friends:index' %}">Friends</a></li>
                 <li><a href="{% url 'my_groups:index' %}">My Groups</a></li>
                 <li><a href="{% url 'my_profile:index' %}">My Profile</a></li>

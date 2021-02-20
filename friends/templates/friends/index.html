@@ -1,3 +1,78 @@
 {% extends "base.html" %}
+{% load static %}
 {% block content %}
+<section class="friends">
+    <ul class="main">
+        <li>
+            <form method="post">
+                {% csrf_token %}
+                <button type="submit" name="all_friends"><img src="{% static 'img/friends.png' %}"></button>
+            </form>
+        </li>
+        <li>
+            <form method="post">
+                {% csrf_token %}
+                <button type="submit" name="best_friends"><img src="{% static 'img/star.png' %}"></button>
+            </form>
+        </li>
+        <li>
+            <form method="post">
+                {% csrf_token %}
+                <button type="submit" name="find_friends"><img src="{% static 'img/add_name.png' %}"></button>
+            </form>
+        </li>
+        {% if all_friends %}
+            <li class="all-friends">
+                <div class="header">Friends</div>
+                <ul>
+                    <li><img src="{% static 'img/profile.png' %}" height="50px"><div>Friend 1</div><img src="{% static 'img/video.png' %}">
+                        <img src="{% static 'img/phone.png' %}"><img src="{% static 'img/chat.png' %}"></li>
+                </ul>
+                <ul>
+                    <li><img src="{% static 'img/profile.png' %}" height="50px"><div>Friend 2</div><img src="{% static 'img/video.png' %}">
+                        <img src="{% static 'img/phone.png' %}"><img src="{% static 'img/chat.png' %}"></li>
+                </ul>
+                <ul>
+                    <li><img src="{% static 'img/profile.png' %}" height="50px"><div>Friend 3</div><img src="{% static 'img/video.png' %}">
+                        <img src="{% static 'img/phone.png' %}"><img src="{% static 'img/chat.png' %}"></li>
+                </ul>
+                <ul>
+                    <li><img src="{% static 'img/profile.png' %}" height="50px"><div>Friend 4</div><img src="{% static 'img/video.png' %}">
+                        <img src="{% static 'img/phone.png' %}"><img src="{% static 'img/chat.png' %}"></li>
+                </ul>
+            </li>
+        {% elif best_friends %}
+            <li class="best-friends">
+                <div class="header">Best Friends</div>
+                <ul>
+                    <li><img src="{% static 'img/profile.png' %}" height="50px"><img src="{% static 'img/star.png' %}" height="20px">
+                        <div>Best Friend 1</div><img src="{% static 'img/video.png' %}">
+                        <img src="{% static 'img/phone.png' %}"><img src="{% static 'img/chat.png' %}"></li>
+                </ul>
+                <ul>
+                    <li><img src="{% static 'img/profile.png' %}" height="50px"><img src="{% static 'img/star.png' %}" height="20px">
+                        <div>Best Friend 2</div><img src="{% static 'img/video.png' %}">
+                        <img src="{% static 'img/phone.png' %}"><img src="{% static 'img/chat.png' %}"></li></ul>
+                <ul>
+                    <li><img src="{% static 'img/profile.png' %}" height="50px"><img src="{% static 'img/star.png' %}" height="20px">
+                        <div>Best Friend 3</div><img src="{% static 'img/video.png' %}">
+                        <img src="{% static 'img/phone.png' %}"><img src="{% static 'img/chat.png' %}"></li></ul>
+                <ul>
+                    <li><img src="{% static 'img/profile.png' %}" height="50px"><img src="{% static 'img/star.png' %}" height="20px">
+                        <div>Best Friend 4</div><img src="{% static 'img/video.png' %}">
+                        <img src="{% static 'img/phone.png' %}"><img src="{% static 'img/chat.png' %}"></li></ul>
+            </li>
+        {% elif find_friends %}
+            <li class="find-friends">
+                <div class="header">Add Friends</div>
+                <ul class="add-blocks">
+                    <li>Add By Search</li>
+                    <li>Pending</li>
+                    <li>Recent</li>
+                    <li>Requests</li>
+                </ul>
+            </li>
+        {% endif %}
+    </ul>
+</section>
 {% endblock %}

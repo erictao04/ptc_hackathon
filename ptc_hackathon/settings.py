@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'help',
     'my_groups',
     'my_profile',
+    'meet_someone',
     'ptc_hackathon.core',
     'django.contrib.admin',
     'django.contrib.auth',
