@@ -29,7 +29,7 @@ SECRET_KEY = config(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default='False') != 'False'
 
-ALLOWED_HOSTS = ['ptc-hackathon.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['virtual-rendezvous.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
