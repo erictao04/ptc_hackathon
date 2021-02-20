@@ -1,1 +1,1 @@
-web: gunicorn My_Portfolio.wsgi --log-file -
+web: gunicorn ptc_hackathon.wsgi --log-file -

@@ -35,7 +35,7 @@ ALLOWED_HOSTS = ['virtual-rendezvous.herokuapp.com', '127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
-    'ptc_hackathon.core',
+    # 'ptc_hackathon.core',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
