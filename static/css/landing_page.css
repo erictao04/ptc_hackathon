@@ -1,0 +1,33 @@
+section.landing .header {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 15vh 0 0 0;
+}
+
+section.landing ul.boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+  padding: 5vh 5vw 0 5vw;
+  gap: 6vh 2vw;
+}
+
+section.landing ul.boxes li {
+  height: 20vh;
+  border-radius: 2rem;
+}
+
+section.landing ul.boxes li:nth-child(1),
+section.landing ul.boxes li:nth-child(6) {
+  background-color: rgb(118, 133, 171);
+}
+
+section.landing ul.boxes li:nth-child(2),
+section.landing ul.boxes li:nth-child(4) {
+  background-color: rgb(175, 209, 213);
+}
+
+section.landing ul.boxes li:nth-child(3),
+section.landing ul.boxes li:nth-child(5) {
+  background-color: rgb(50, 70, 111);
+}

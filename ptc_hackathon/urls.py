@@ -14,11 +14,16 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 
 from ptc_hackathon.core import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name="index")
+    path('', views.index, name="index"),
+    path('friends/', include('friends.urls')),
+    path('help/', include('help.urls')),
+    path('my_groups/', include('my_groups.urls')),
+    path('my_profile/', include('my_profile.urls')),
+
 ]

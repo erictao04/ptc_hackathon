@@ -35,7 +35,11 @@ ALLOWED_HOSTS = ['virtual-rendezvous.herokuapp.com', '127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
-    # 'ptc_hackathon.core',
+    'friends',
+    'help',
+    'my_groups',
+    'my_profile',
+    'ptc_hackathon.core',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -125,6 +129,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
+
 
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)

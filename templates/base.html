@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Virtual Rendez-Vous</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/nav_bar.css' %}">
+        <link rel="stylesheet" href="{% static 'css/landing_page.css' %}">
+        <script src="https://kit.fontawesome.com/6f3d5e0865.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <a href="{% url 'friends:index' %}">Friends</a>
+                <a href="{% url 'my_groups:index' %}">My Groups</a>
+                <a href="{% url 'my_profile:index' %}">My Profile</a>
+                <a href="{% url 'help:index' %}">Help</a>
+                <a href=""><i class="fas fa-cog"></i></a>
+        </nav>
+        {% block content %}{% endblock %}
+    </body>
+</html>
