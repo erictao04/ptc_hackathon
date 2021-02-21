@@ -7,5 +7,8 @@ def index(request):
     if request.method == 'GET':
         return render(request, 'landing_page.html')
     elif request.method == 'POST':
-        Game.launch()
+        try:
+            Game.launch()
+        except:
+            pass
         return render(request, 'landing_page.html')
