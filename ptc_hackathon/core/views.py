@@ -12,4 +12,5 @@ def index(request):
             Game.launch()
         except:
             pass
+
         return render(request, 'landing_page.html')
