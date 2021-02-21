@@ -1,0 +1,71 @@
+html {
+  font-size: 10px;
+}
+
+section.help ul.header {
+  list-style: none;
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 5vh 12vw 5vh 12vw;
+  background-color: rgb(118, 133, 171);
+  margin: 1vh 0 3vh 0;
+}
+
+section.help ul.header div {
+  height: 5vh;
+  background-color: white;
+  margin-top: 2vh;
+}
+
+section.help ul.header div:hover {
+  cursor: text;
+}
+
+section.help ul.header div > div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 1vw;
+}
+
+section.help div.header {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+section.help ul.help-topics {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 7vh 3vw;
+  padding: 3vh 7vw 0 7vw;
+}
+
+section.help ul.help-topics li {
+  height: 15vh;
+  background-color: red;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+}
+
+section.help ul.help-topics li:hover {
+  cursor: pointer;
+}
+
+section.help ul.help-topics li:nth-child(1),
+section.help ul.help-topics li:nth-child(6) {
+  background-color: rgb(118, 133, 171);
+}
+
+section.help ul.help-topics li:nth-child(2),
+section.help ul.help-topics li:nth-child(4) {
+  background-color: rgb(175, 209, 213);
+}
+
+section.help ul.help-topics li:nth-child(3),
+section.help ul.help-topics li:nth-child(5) {
+  background-color: rgb(50, 70, 111);
+}

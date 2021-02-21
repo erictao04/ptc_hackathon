@@ -8,15 +8,15 @@ section.meet-someone .header {
 }
 
 section.meet-someone .header:first-child {
-  padding: 10vh 0 5vh 0;
+  padding: 7vh 0 5vh 0;
 }
 
 section.meet-someone ul {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  height: 13vh;
-  gap: 5vh 8vw;
+  height: 16vh;
+  gap: 5vh 5vw;
   padding: 0 15vw 7vh 15vw;
 }
 
@@ -51,10 +51,10 @@ section.meet-someone ul li:nth-child(3) {
 
 section.meet-someone .lucky {
   background-color: rgb(224, 152, 120);
-  width: 20vw;
+  width: 24vw;
   position: fixed;
-  left: 40vw;
-  height: 15vh;
+  left: 38vw;
+  height: 19vh;
   border-radius: 2rem;
   display: flex;
   align-items: center;

@@ -1,1 +1,19 @@
 {% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section class="help">
+    <ul class="header">
+        <li>Search Help Topic</li>
+        <div class="search-bar"><div><img src="{% static 'img/loop.png' %}" height="25px"></div></div>
+    </ul>
+    <div class="header">Browse Help Topics</div>
+    <ul class="help-topics">
+        <li>Topic 1</li>
+        <li>Topic 2</li>
+        <li>Topic 3</li>
+        <li>Topic 4</li>
+        <li>Topic 5</li>
+        <li>Topic 6</li>
+    </ul>
+</section>
+{% endblock %}

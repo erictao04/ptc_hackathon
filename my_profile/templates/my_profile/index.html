@@ -1,1 +1,15 @@
 {% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section class="my_profile">
+    <ul class="profile">
+        <li><img src="{% static 'img/profile.png' %}" height="100px"></li>
+        <li>Sample Name</li>
+        <li><i>Status</i></li>
+        <li>About Me</li>
+        <li>Sample Bio Sample Bio</li>
+        <li>Sample Bio Sample Bio</li>
+        <li>Sample Bio Sample Bio</li>
+    </ul>
+</section>
+{% endblock %}
