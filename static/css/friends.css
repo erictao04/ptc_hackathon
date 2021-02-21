@@ -12,11 +12,20 @@ section.friends .main {
   list-style: none;
   padding: 0 15vw 0 15vw;
 }
-
+section.friends .main li form {
+  width: 100%;
+  height: 100%;
+}
 section.friends .main li form button {
   background-color: inherit;
   border: none;
   cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+section.friends .main li form button:active {
+  border: none;
 }
 
 section.friends .main > li:first-child {

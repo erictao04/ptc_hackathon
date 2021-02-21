@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="settings">
+    <ul>
+        <ul class="sidebar">
+            <li><form method="post">
+                {% csrf_token %}
+                <button type="submit" name="account">Account</button>
+            </form></li>
+            <li><form method="post">
+                {% csrf_token %}
+                <button type="submit" name="password">Password</button>
+            </form></li>
+            <li><form method="post">
+                {% csrf_token %}
+                <button type="submit" name="voice_video">Voice + Video</button>
+            </form></li>
+            <li><form method="post">
+                {% csrf_token %}
+                <button type="submit" name="appearance">Appearance</button>
+            </form></li>
+        </ul>
+        {% if account %}
+            <ul class="account">
+                <li>Change Username</li>
+                <div></div>
+                <li>Change Email</li>
+                <div></div>
+                <li>Change Phone Number</li>
+                <div></div>
+                <li>Change Instagram @</li>
+                <div></div>
+                <button>Submit Changes</button>
+            </ul>
+        {% elif password %}
+            <ul class="password">
+                <li>Old Password</li>
+                <div></div>
+                <li>New Password</li>
+                <div></div>
+                <li>Confirm New Password</li>
+                <div></div>
+                <button>Submit Changes</button>
+            </ul>
+        {% elif voice_video %}
+            <ul class="voice_video">
+                <li>Enable Microphone</li>
+                <div></div>
+                <li>Enable Videocam</li>
+                <div></div>
+                <li>Sound Volum</li>
+                <div></div>
+                <button>Submit Changes</button>
+            </ul>
+        {% elif appearance %}
+            <ul class="appearance">
+                <li>Background Color</li>
+                <div></div>
+                <li>Camera Quality</li>
+                <div></div>
+                <li>Dark Mode</li>
+                <div></div>
+                <button>Submit Changes</button>
+            </ul>
+        {% endif %}
+            
+    </ul>
+</section>
+{% endblock %}

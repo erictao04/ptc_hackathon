@@ -1,16 +1,20 @@
 {% extends "base.html" %}
+{% load static %}
 {% block content %}
 <section class="landing">
     <div class="header">
-        Join A Group!
+        Join Our Community!
     </div>
     <ul class="boxes">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <button><img src="{% static 'img/add_name.png' %}">Create An Account</button>
+        <form method="post">
+            {% csrf_token %}
+            <button type="submit" name="account"><img src="{% static 'img/tic_tac_toe.png' %}">Play Tic Tac Toe</button>
+        </form>
+        <button><img src="{% static 'img/clover.png' %}">Make New Friends</button>
+        <button><img src="{% static 'img/phone.png' %}">Join Groups</button>
+        <button><img src="{% static 'img/profile.png' %}">Login</button>
+        <button><img src="{% static 'img/controller.png' %}">Play Games</button>
     </ul>
 </section>
 {% endblock %}

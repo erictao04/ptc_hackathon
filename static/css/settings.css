@@ -1,0 +1,115 @@
+section.settings > ul {
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  list-style: none;
+  padding: 0;
+  margin: 5vh 14vw 0 14vw;
+  border: 3px solid black;
+}
+
+section.settings ul .sidebar {
+  list-style: none;
+  padding-left: 0;
+  border-right: 3px solid black;
+}
+
+section.settings ul .sidebar li {
+  display: block;
+  height: 10vh;
+  border-bottom: 3px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.settings ul .sidebar li form {
+  background-color: inherit;
+  width: 100%;
+  height: 100%;
+}
+
+section.settings ul .sidebar li form button {
+  background-color: inherit;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 2.5rem;
+}
+section.settings ul .sidebar li form button:hover {
+  cursor: pointer;
+}
+
+section.settings ul .sidebar li:first-child,
+section.settings ul .sidebar li:nth-child(4) {
+  background-color: rgb(175, 209, 213);
+}
+
+section.settings ul .sidebar li:nth-child(2) {
+  background-color: rgb(118, 133, 171);
+}
+
+section.settings ul .sidebar li:nth-child(3) {
+  background-color: rgb(50, 70, 111);
+}
+
+section.settings ul .sidebar li:nth-child(4) {
+  border: none;
+}
+
+section.settings ul ul {
+  list-style: none;
+  padding: 0;
+}
+
+section.settings ul ul:not(.sidebar) > li {
+  padding-left: 10%;
+  font-size: 2rem;
+  margin-top: 1%;
+}
+
+section.settings ul ul:not(.sidebar) > div {
+  background-color: white;
+  height: 2rem;
+  margin: 1% 25% 1% 5%;
+}
+
+section.settings ul ul:not(.sidebar) > div:hover {
+  cursor: text;
+}
+
+section.settings ul ul > button {
+  font-size: 2rem;
+  border: none;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  margin-left: 8%;
+  margin-top: 1.5%;
+}
+
+section.settings ul ul button:hover {
+  cursor: pointer;
+}
+
+section.settings ul ul.account,
+section.settings ul ul.account ~ li {
+  background-color: rgb(175, 209, 213);
+}
+
+section.settings ul ul.password,
+section.settings ul ul.password ~ li,
+section.settings ul ul.account button {
+  background-color: rgb(118, 133, 171);
+}
+
+section.settings ul ul.voice_video,
+section.settings ul ul.voice_video ~ li,
+section.settings ul ul.password button {
+  background-color: rgb(50, 70, 111);
+}
+
+section.settings ul ul.appearance,
+section.settings ul ul.appearance ~ li,
+section.settings ul ul.voice_video button {
+  background-color: rgb(175, 209, 213);
+}

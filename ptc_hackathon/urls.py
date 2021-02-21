@@ -26,5 +26,6 @@ urlpatterns = [
     path('my_groups/', include('my_groups.urls')),
     path('my_profile/', include('my_profile.urls')),
     path('meet_someone/', include('meet_someone.urls')),
+    path('settings/', include('settings.urls'))
 
 ]

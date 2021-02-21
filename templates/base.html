@@ -10,6 +10,8 @@
         <link rel="stylesheet" href="{% static 'css/meet_someone.css' %}">
         <link rel="stylesheet" href="{% static 'css/help.css' %}">
         <link rel="stylesheet" href="{% static 'css/my_profile.css' %}">
+        <link rel="stylesheet" href="{% static 'css/my_groups.css' %}">
+        <link rel="stylesheet" href="{% static 'css/settings.css' %}">
         <script src="https://kit.fontawesome.com/6f3d5e0865.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -21,7 +23,7 @@
                 <li><a href="{% url 'my_groups:index' %}">My Groups</a></li>
                 <li><a href="{% url 'my_profile:index' %}">My Profile</a></li>
                 <li><a href="{% url 'help:index' %}">Help</a></li>
-                <li><a href=""><i class="fas fa-cog"></i></a></li>
+                <li><a href="{% url 'settings:index' %}"><i class="fas fa-cog"></i></a></li>
         </nav>
         {% block content %}{% endblock %}
     </body>
